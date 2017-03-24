@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration debug="false">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%logger{15} - id=%X{id} - %message%n%xException{10}</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="play" level="WARN" />
+    <logger name="akka" level="WARN" />
+    <logger name="com.lightbend.lagom" level="WARN" />
+    <logger name="org.apache.cassandra" level="ERROR" />
+    <logger name="com.datastax.driver" level="ERROR" />
+    <logger name="org.apache.kafka" level="WARN" />
+    <logger name="com.github.dnvriend" level="DEBUG" />
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
