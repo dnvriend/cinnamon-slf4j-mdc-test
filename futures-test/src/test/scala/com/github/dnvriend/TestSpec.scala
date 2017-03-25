@@ -25,7 +25,7 @@ import scala.concurrent.duration._
 import scala.concurrent.{ ExecutionContext, Future }
 import scala.util.Try
 
-abstract class TestSpec extends FlatSpec with Matchers with ScalaFutures with BeforeAndAfterAll {
+trait TestSpec extends FlatSpec with Matchers with ScalaFutures with BeforeAndAfterAll {
   implicit val system: ActorSystem = ActorSystem()
   implicit val ec: ExecutionContext = system.dispatcher
   implicit val pc: PatienceConfig = PatienceConfig(timeout = 60.minutes, interval = 300.millis)

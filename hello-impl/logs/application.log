@@ -1,0 +1,34 @@
+c.g.d.HelloLoader$$anon$1 - id= - Launching...
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id= - Uppercasing: 'id='ed10c3f1-f912-44cd-8790-86db90cd52a5', name='ed10c3f1-f912-44cd-8790-86db90cd52a5''
+c.g.d.a.s.HelloServiceImpl - id= - Hello ed10c3f1-f912-44cd-8790-86db90cd52a5 - ID='ED10C3F1-F912-44CD-8790-86DB90CD52A5', NAME='ED10C3F1-F912-44CD-8790-86DB90CD52A5'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=0013b70f-eb6e-463d-a6e2-de332e49770e - Uppercasing: 'id='0013b70f-eb6e-463d-a6e2-de332e49770e', name='0013b70f-eb6e-463d-a6e2-de332e49770e''
+c.g.d.a.s.HelloServiceImpl - id=0013b70f-eb6e-463d-a6e2-de332e49770e - Hello 0013b70f-eb6e-463d-a6e2-de332e49770e - ID='0013B70F-EB6E-463D-A6E2-DE332E49770E', NAME='0013B70F-EB6E-463D-A6E2-DE332E49770E'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=2104c2e1-7f0a-4d4b-8d2f-c9f4c1819d39 - Uppercasing: 'id='2104c2e1-7f0a-4d4b-8d2f-c9f4c1819d39', name='2104c2e1-7f0a-4d4b-8d2f-c9f4c1819d39''
+c.g.d.a.s.HelloServiceImpl - id=2104c2e1-7f0a-4d4b-8d2f-c9f4c1819d39 - Hello 2104c2e1-7f0a-4d4b-8d2f-c9f4c1819d39 - ID='2104C2E1-7F0A-4D4B-8D2F-C9F4C1819D39', NAME='2104C2E1-7F0A-4D4B-8D2F-C9F4C1819D39'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=ed47a507-198e-42c5-a7bf-8bfd422343bd - Uppercasing: 'id='ed47a507-198e-42c5-a7bf-8bfd422343bd', name='ed47a507-198e-42c5-a7bf-8bfd422343bd''
+c.g.d.a.s.HelloServiceImpl - id=ed47a507-198e-42c5-a7bf-8bfd422343bd - Hello ed47a507-198e-42c5-a7bf-8bfd422343bd - ID='ED47A507-198E-42C5-A7BF-8BFD422343BD', NAME='ED47A507-198E-42C5-A7BF-8BFD422343BD'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=c08950f0-995c-414a-aa79-81d20e30fc25 - Uppercasing: 'id='c08950f0-995c-414a-aa79-81d20e30fc25', name='c08950f0-995c-414a-aa79-81d20e30fc25''
+c.g.d.a.s.HelloServiceImpl - id=c08950f0-995c-414a-aa79-81d20e30fc25 - Hello c08950f0-995c-414a-aa79-81d20e30fc25 - ID='C08950F0-995C-414A-AA79-81D20E30FC25', NAME='C08950F0-995C-414A-AA79-81D20E30FC25'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=04f1e2d6-f06f-4531-a934-49c946fd41aa - Uppercasing: 'id='04f1e2d6-f06f-4531-a934-49c946fd41aa', name='04f1e2d6-f06f-4531-a934-49c946fd41aa''
+c.g.d.a.s.HelloServiceImpl - id=04f1e2d6-f06f-4531-a934-49c946fd41aa - Hello 04f1e2d6-f06f-4531-a934-49c946fd41aa - ID='04F1E2D6-F06F-4531-A934-49C946FD41AA', NAME='04F1E2D6-F06F-4531-A934-49C946FD41AA'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id= - Uppercasing: 'id='07521148-a1bb-4e29-8210-20ff60155959', name='07521148-a1bb-4e29-8210-20ff60155959''
+c.g.d.a.s.HelloServiceImpl - id= - Hello 07521148-a1bb-4e29-8210-20ff60155959 - ID='07521148-A1BB-4E29-8210-20FF60155959', NAME='07521148-A1BB-4E29-8210-20FF60155959'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=6351486a-3516-47ab-a029-ef1efa4f3ddb - Uppercasing: 'id='6351486a-3516-47ab-a029-ef1efa4f3ddb', name='6351486a-3516-47ab-a029-ef1efa4f3ddb''
+c.g.d.a.s.HelloServiceImpl - id=6351486a-3516-47ab-a029-ef1efa4f3ddb - Hello 6351486a-3516-47ab-a029-ef1efa4f3ddb - ID='6351486A-3516-47AB-A029-EF1EFA4F3DDB', NAME='6351486A-3516-47AB-A029-EF1EFA4F3DDB'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=c50a3638-2c75-41b9-b4aa-1a727f0c16c8 - Uppercasing: 'id='c50a3638-2c75-41b9-b4aa-1a727f0c16c8', name='c50a3638-2c75-41b9-b4aa-1a727f0c16c8''
+c.g.d.a.s.HelloServiceImpl - id=c50a3638-2c75-41b9-b4aa-1a727f0c16c8 - Hello c50a3638-2c75-41b9-b4aa-1a727f0c16c8 - ID='C50A3638-2C75-41B9-B4AA-1A727F0C16C8', NAME='C50A3638-2C75-41B9-B4AA-1A727F0C16C8'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=d8066cdd-9b52-40a8-9faa-36fbec87b4e3 - Uppercasing: 'id='d8066cdd-9b52-40a8-9faa-36fbec87b4e3', name='d8066cdd-9b52-40a8-9faa-36fbec87b4e3''
+c.g.d.a.s.HelloServiceImpl - id=d8066cdd-9b52-40a8-9faa-36fbec87b4e3 - Hello d8066cdd-9b52-40a8-9faa-36fbec87b4e3 - ID='D8066CDD-9B52-40A8-9FAA-36FBEC87B4E3', NAME='D8066CDD-9B52-40A8-9FAA-36FBEC87B4E3'
+c.g.d.a.r.PersonRepository - id= - Getting person name
+c.g.d.a.s.UpperCaseService - id=465571f4-88d6-4197-ae12-16840903f4d7 - Uppercasing: 'id='465571f4-88d6-4197-ae12-16840903f4d7', name='465571f4-88d6-4197-ae12-16840903f4d7''
+c.g.d.a.s.HelloServiceImpl - id=465571f4-88d6-4197-ae12-16840903f4d7 - Hello 465571f4-88d6-4197-ae12-16840903f4d7 - ID='465571F4-88D6-4197-AE12-16840903F4D7', NAME='465571F4-88D6-4197-AE12-16840903F4D7'
