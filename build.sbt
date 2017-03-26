@@ -59,7 +59,12 @@ lazy val `akka-test` = (project in file("akka-test"))
 
 lazy val `hello-api` = (project in file("hello-api"))
   .settings(commonSettings)
+  .settings(libraryDependencies ++= cinnamonLagomDependencies)
+  .settings(resolvers += Cinnamon.resolver.commercial)
   .settings(libraryDependencies += lagomScaladslApi)
+  .settings(cinnamon in run := true)
+  .settings(cinnamon in test := true)
+  .settings(cinnamonLogLevel := "INFO")
 
 lazy val `hello-impl` = (project in file("hello-impl"))
   .enablePlugins(AutomateHeaderPlugin)
@@ -70,9 +75,8 @@ lazy val `hello-impl` = (project in file("hello-impl"))
   .settings(cinnamon in run := true)
   .settings(cinnamon in test := true)
   .settings(cinnamonLogLevel := "INFO")
-  .settings(libraryDependencies += Cinnamon.library.cinnamonSlf4jMdc)
-  .settings(libraryDependencies += Cinnamon.library.cinnamonLagom)
-  .settings(libraryDependencies += Cinnamon.library.cinnamonAkka)
+  .settings(libraryDependencies ++= cinnamonLagomDependencies)
+  .settings(resolvers += Cinnamon.resolver.commercial)
   .settings(libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0")
   .settings(libraryDependencies += macwire)
   .settings(libraryDependencies += scalaTest)
@@ -96,4 +100,12 @@ lazy val commonSettings = Seq(
     "scala" -> Apache2_0("2016", "Dennis Vriend"),
     "conf" -> Apache2_0("2016", "Dennis Vriend", "#")
   )
+)
+
+// Add the resolver for the cinnamon dependencies
+lazy val cinnamonLagomDependencies: Seq[ModuleID] = Seq(
+  // Use Coda Hale Metrics and Lagom monitoring
+  Cinnamon.library.cinnamonCHMetrics,
+  Cinnamon.library.cinnamonLagom,
+  Cinnamon.library.cinnamonSlf4jMdc
 )
