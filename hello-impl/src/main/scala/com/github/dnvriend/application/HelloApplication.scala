@@ -16,13 +16,16 @@
 
 package com.github.dnvriend.application
 
+import akka.actor.ActorSystem
+import akka.util.Timeout
 import com.github.dnvriend.adapters.repository.PersonRepository
-import com.github.dnvriend.adapters.services.{ HelloServiceImpl, UpperCaseService }
+import com.github.dnvriend.adapters.services.{ ActorLowerCaseService, HelloServiceImpl, LowerCaseService, UpperCaseService }
 import com.github.dnvriend.api.HelloService
 import com.lightbend.lagom.scaladsl.server.{ LagomApplication, LagomApplicationContext, LagomServer }
 import com.softwaremill.macwire.wire
 import com.typesafe.scalalogging.LazyLogging
 import play.api.libs.ws.ahc.AhcWSComponents
+import scala.concurrent.duration._
 
 abstract class HelloApplication(context: LagomApplicationContext)
     extends LagomApplication(context)
@@ -30,8 +33,11 @@ abstract class HelloApplication(context: LagomApplicationContext)
 
   logger.debug("Launching...")
 
+  implicit val timeout: Timeout = 10.seconds
+  implicit val system: ActorSystem = actorSystem
   lazy val personRepo: PersonRepository = wire[PersonRepository]
   lazy val upperCaseService: UpperCaseService = wire[UpperCaseService]
+  lazy val lowerCaseService: LowerCaseService = wire[ActorLowerCaseService]
 
   override lazy val lagomServer: LagomServer = LagomServer.forServices(
     bindService[HelloService].to(wire[HelloServiceImpl])

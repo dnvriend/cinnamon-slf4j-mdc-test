@@ -24,15 +24,16 @@ import org.slf4j.MDC
 
 import scala.concurrent.ExecutionContext
 
-class HelloServiceImpl(personRepo: PersonRepository, upperCaseService: UpperCaseService)(implicit ec: ExecutionContext) extends HelloService with LazyLogging {
+class HelloServiceImpl(personRepo: PersonRepository, upperCaseService: UpperCaseService, lowerCaseService: LowerCaseService)(implicit ec: ExecutionContext) extends HelloService with LazyLogging {
 
   override def hello(name: String) = ServiceCall { _ =>
     val id: String = personRepo.randomId()
     MDC.put("id", id)
     (for {
-      name <- personRepo.getPersonName(id, id)
+      name <- personRepo.getPersonName(id, s"$id - $name")
       upper <- upperCaseService.toUpperCase(name)
-    } yield upper).map { result =>
+      lower <- lowerCaseService.toLowerCase(upper)
+    } yield lower).map { result =>
       logger.debug(s"Hello $id - $result")
       MDC.clear()
       result
